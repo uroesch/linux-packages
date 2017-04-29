@@ -1,0 +1,21 @@
+= {Title}
+:title:     linux-packages
+:author:    Urs Roesch
+:firstname: Urs
+:lastname:  Roesch
+:email:     github@bun.ch
+:revnumber: 0.1
+:keywords:  packages, rpm, deb, dpkg
+:toc: 
+:icons:     font
+
+A collection of packages needed to get work done :)
+
+== Supported Operating Systems
+=== Ubuntu 
+* link:zesty[Ubuntu 17.04 (Zesty Zapus)] 
+* link:trusty[Ubuntu 16.04 (Trusty Thar)] 
+
+=== CentOS / RHEL
+* link:el6[CentOS 6]
+* link:el7[CentOS 7]
