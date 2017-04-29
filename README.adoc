@@ -6,7 +6,6 @@
 :email:     github@bun.ch
 :revnumber: 0.1
 :keywords:  packages, rpm, deb, dpkg
-:toc:
 :icons:     font
 
 A collection of packages needed to get work done :)
