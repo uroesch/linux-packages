@@ -11,6 +11,10 @@
 A collection of packages needed to get work done :)
 
 == Supported Operating Systems
+=== Debian
+* link:wheezy[Debian 7 (Wheezy)]
+* link:jessie[Debian 8 (Jessie)]
+
 === Ubuntu
 * link:zesty[Ubuntu 17.04 (Zesty Zapus)]
 * link:trusty[Ubuntu 16.04 (Trusty Thar)]
