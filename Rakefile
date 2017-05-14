@@ -26,7 +26,10 @@ task :default => :dist_packages
 task :dist_packages do
   FILES.each do |file|
     subdir = determine_subdir(file)
+    target = File.join(subdir, File.basename(file))
     mkdir subdir unless File.exist?(subdir)
-    mv file, subdir
+    cp file, target unless File.exist?(target) 
+    sh %(git add #{target})
+    rm file 
   end
 end
