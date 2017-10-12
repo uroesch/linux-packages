@@ -23,6 +23,7 @@ end
 
 task :default => :dist_packages
 
+desc "Distrubute packages into sub directories"
 task :dist_packages do
   FILES.each do |file|
     subdir = determine_subdir(file)
