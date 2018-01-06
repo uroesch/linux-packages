@@ -16,8 +16,10 @@ A collection of packages needed to get work done :)
 * link:jessie[Debian 8 (Jessie)]
 
 === Ubuntu
+* link:trusty[Ubuntu 14.04 (Trusty Thar)]
+* link:trusty[Ubuntu 16.04 (Xenial Xerus)]
 * link:zesty[Ubuntu 17.04 (Zesty Zapus)]
-* link:trusty[Ubuntu 16.04 (Trusty Thar)]
+* link:artful[Ubuntu 17.10 (Artful Aardvark)]
 
 === CentOS / RHEL
 * link:el6[CentOS 6]
