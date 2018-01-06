@@ -20,6 +20,15 @@ def subdir(basename)
   end
 end
 
+def create_hashfile(file)
+  directory = File.dirname(file) 
+  basename  = File.basename(file)
+  cd directory do
+    sh %(md5sum #{basename} > #{basename}.md5)
+    sh %(sha256sum #{basename} > #{basename}.sha256)
+  end
+end
+
 
 task :default => :dist_packages
 
@@ -29,8 +38,15 @@ task :dist_packages do
     subdir = determine_subdir(file)
     target = File.join(subdir, File.basename(file))
     mkdir subdir unless File.exist?(subdir)
-    cp file, target unless File.exist?(target) 
-    sh %(git add #{target})
-    rm file 
+    begin
+      puts target
+      unless File.exist?(target) 
+        cp file, target 
+        create_hashfile(target)
+        sh %(git add #{target}*)
+      end
+    ensure
+      rm file 
+    end
   end
 end
